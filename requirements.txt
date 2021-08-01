@@ -1,0 +1,10 @@
+pandas>=1.1.1
+lasio>=0.29
+matplotlib>=3.4.2
+altair>=4.1.0
+numpy>=1.21.1
+scipy>=1.7.0
+seaborn>=0.11.1
+segyio>=1.9.6
+skimage>=0.18.1
+streamlit
