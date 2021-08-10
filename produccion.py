@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
  
 
 def menu_evaluador():
@@ -6,5 +7,21 @@ def menu_evaluador():
 	return proceso
 
 def produccion():
-	menu_evaluador()
-	st.write('produccion')
+	st.sidebar.warning("Bienvenido al módulo petrofísico elija el metodo de evaluacion") #Amarillo
+
+	proceso = menu_evaluador()
+
+	if proceso == '🏠 Overview':
+		st.write('Módulo de produccion')
+		overview = Image.open('1 reservas.jpeg')
+		st.image(overview)
+
+	if proceso == '⏲️ Performance':
+		st.write('Módulo de produccion')
+		Performance = Image.open('2 Arima_model.jpeg')
+		st.image(Performance)
+
+	if proceso == '📈 Analytics':
+		st.write('Módulo de produccion')
+		Analytics = Image.open('3 Oil_Production.jpeg')
+		st.image(Analytics)
