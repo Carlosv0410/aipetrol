@@ -7,7 +7,7 @@ def menu_evaluador():
 	return proceso
 
 def produccion():
-	st.sidebar.warning("Bienvenido al módulo petrofísico elija el metodo de evaluacion") #Amarillo
+	st.sidebar.warning("Bienvenido al módulo de producción elija el metodo de evaluacion") #Amarillo
 
 	proceso = menu_evaluador()
 
